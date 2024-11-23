@@ -10,7 +10,7 @@ FROM registry.fedoraproject.org/fedora-minimal:40
 
 WORKDIR /app
 
-EXPOSE 8000
+EXPOSE 8080
 
 COPY --from=builder /workspace/target/release/rust-webapp-sample /app/application
 
